@@ -20,7 +20,7 @@ var validate = (function() {
       var args = validate[i].arguments;
       args = !Array.isArray(args) ? [args] : args;
       var clonedArgs = args.slice(0);
-      clonedArgs.unshift(value || '');
+      clonedArgs.unshift(value);
 
       var message = validate[i].message || '';
   
